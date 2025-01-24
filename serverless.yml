@@ -11,6 +11,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    timeout: 60
+    memorySize: 128
     events:
       - httpApi:
           path: /
